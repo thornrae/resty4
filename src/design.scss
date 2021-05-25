@@ -1,0 +1,103 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+    // ^^ means stack them
+
+
+}
+
+#root {
+  display: flex; 
+  flex-direction: column; 
+  flex: 1;
+  //^ flex: 1 means take all the space, go high as you possibly can
+
+
+  & > header {
+    background: paleturquoise;
+    color: darkolivegreen;
+
+    nav {
+      background: blueviolet;
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   
+
+      li {
+        display: inline-block;
+        padding: 1em 3em;
+
+        &:hover {
+          background: lightpink;
+        }
+
+        a {
+          text-decoration: none;
+          color: lightcoral;
+        }
+      }
+    }
+  }
+}
+
+  & > main {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+  }
+
+  & > footer {
+    background: #1111;
+    color: ivory;
+  }
+}
+
+.homeWrapper {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+
+.homeOutput {
+  display:flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+form {
+  margin-bottom: 2em;
+}
+
+aside {
+  width: 200px;
+
+.history {
+  margin: .5em 0;
+  padding: .5em;
+  
+  .method {
+  background: darkorchid;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: ivory;
+  display: inline-block;
+  margin: .25em;
+  padding: .5rem;
+  width: 50px;
+
+
+  .url {
+  font-size: 5em;
+  }
+}
+}
+}
